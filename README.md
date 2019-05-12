@@ -1,8 +1,6 @@
 # lffview
 view for 360 like large file finder
 
-npm install
-
-npm run build
-
-npm run dev
+npm install<br/>
+npm run build<br/>
+npm run dev<br/>
