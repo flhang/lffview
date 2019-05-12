@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cn" class="metro-no-touch-device">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="metro4:init" content="false">
+		<!-- Metro 4 -->
+		<link type="text/css" rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./metro/css/metro-all.min.css">
+		<link type="text/css" rel="stylesheet" href="./css/mycontrolls.css">
+		<link rel="stylesheet" type="text/css" href="./tooltip/dist/css/tooltipster.bundle.min.css" />
+		<link rel="stylesheet" type="text/css" href="./tooltip/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+		<title>大文件查找</title>
+		<script src="./js/echarts.js"></script>
+	</head>
+	<body style="border:1px solid;border-radius:5px">
+
+
+		<div class="window">
+
+			<div class="window-caption" @mousedown="" style="-webkit-app-region: drag;background-color:#22CB64;">
+				<span class="icon mif-ambulance"></span>
+				<span class="title">电脑清理-查找大文件</span>
+				<div class="buttons">
+					<span class="button btn-min sys-button"  onclick="gCallCpp('minwindow');"></span>
+					<span class="button btn-max sys-button"  onclick="gCallCpp('maxwindow');"></span>
+					<span class="button btn-close sys-button" onclick="gCallCpp('closewindow');"></span>
+				</div>
+			</div>
+
+			<div id="app">
+				<router-view>
+				</router-view>
+			</div><!-- app -->
+
+		</div> <!-- window -->
+
+
+
+
+		<!-- jQuery first, then Metro UI JS -->
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./metro/js/metro.min.js"></script>
+		<script src="./dist/js/testcase.js"></script>
+		<script src="./dist/js/export.js"></script>
+		<script src="./dist/js/import.js"></script>
+
+		<!--<script src="./tooltip/dist/js/tooltipster.bundle.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.tooltip').tooltipster({
+
+					maxWidth: 300,
+					side: 'bottom'
+				});
+				console.log(" ondocument.ready");
+			});
+		</script>
+-->
+
+		<script src="./dist/build.js"></script>
+
+	</body>
+</html>

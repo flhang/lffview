@@ -1,0 +1,476 @@
+.window-caption {
+
+	background: #690;
+
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+
+}
+
+.description {
+	font-size: 12px;
+	width: 100%;
+	height: 70px;
+
+	position: absolute;
+	top: 36px;
+	padding: 20px 20px;
+	border-bottom: 1px solid #DCDCDC;
+}
+
+
+.dBody {
+	//background:#FC0;
+	width: 100%;
+	overflow: auto;
+	top: 106px;
+	position: absolute;
+	z-index: 10;
+	bottom: 70px;
+}
+
+.dBodyScan {
+	//background:#FC0;
+	width: 100%;
+	overflow: auto;
+	top: 106px;
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+}
+
+.mycontent {
+	padding: 20px;
+	//background: red;
+	height: 100%;
+}
+
+#scaningfile {
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+
+#scancontent {
+
+	font-size: small;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	margin-left: -250px;
+	margin-top: -90px;
+
+	height: 50px;
+	line-height: 50px;
+	//background: #00AFF0;
+}
+
+.resultcontent {
+
+	//background: #00AFF0;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.resultleft {
+	position: fixed;
+	top: 106px;
+	right: 280px;
+	left: 1px;
+	bottom: 1px;
+	overflow-y: auto;
+
+}
+
+.scroll
+{
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.resultright {
+
+	//background: red;
+	padding: 0;
+	position: fixed;
+	top: 106px;
+	bottom: 1px;
+	width: 280px;
+	right: 0;
+
+
+
+
+}
+
+.resultleft ul {
+	list-style: none;
+	
+	
+}
+
+
+.filelist {font-size: small;display:block; margin: 0 0;padding: 0 0 ; height: 30px;  line-height:30px;;
+text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+
+}
+.filelist span {display:block;width:100%;background:white;height:30px;line-height:30px;margin: 0 0;padding: 0 0 ;}
+.filelist span:hover {display:block; height:30px;background: #FFDD99;}
+
+.lifilecheck
+{
+	float:left;
+	width:24px;
+	margin-left:10px;
+	margin-top:5px;
+}
+.lifileicon {
+	float: left;
+	font-size: 6px;
+	width:32px;
+	
+	margin: 0 auto;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+}
+
+.lifiledrive {
+	float: right;
+	width:100px;
+	line-height:30px;
+	margin: 0 auto;
+}
+
+.lifilename {
+	float: left;
+	width:300px;
+	height:30px;
+	line-height:30px;
+	margin: 0 auto;
+	text-overflow: -o-ellipsis-lastline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	
+}
+
+.lifilesize {
+	float: right;
+	width:100px;
+	line-height:30px;
+	margin: 0 auto;
+}
+
+#main {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#dFoot {
+	height: 70px;
+	line-height: 70px;
+	background: #FFFFFF;
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+	bottom: 20px;
+	padding: 20px;
+
+}
+
+.footcontent {
+	background: #FFFFFF;
+	//background:red;
+	position: relative;
+	bottom: 25px;
+	padding-left: 20px;
+
+	border: 1px solid gainsboro;
+	border-radius: 10px;
+}
+
+.footprogress {
+	position: relative;
+	bottom: 25px;
+	width: 98%;
+
+}
+
+.top-center-bottom>div {
+	position: absolute;
+}
+
+body {
+	height: 100%;
+	//background-color: #FF0000;
+}
+
+#wrapperz {
+	height: 100%;
+
+}
+
+.window {
+	height: 100%;
+}
+
+.grid {
+	position: absolute;
+	height: 100%;
+
+}
+
+#app {
+	height: 100%;
+	//background-color: antiquewhite;
+}
+
+.maincontent {
+
+
+	width: 100%;
+	height: 100%;
+	//background: #3597FF;
+	margin: 0 auto;
+
+}
+
+
+.description .desc-icon {
+	width: 50;
+	float: left;
+	margin-right: 10px;
+}
+
+.description .desc-text {
+	float: left;
+}
+
+.description .desc-button {
+	float: right;
+}
+
+.description .desc-return {
+	float: right;
+	margin-top:10px;
+	margin-right:10px;
+}
+
+
+.drivelist {
+	height: 100%;
+
+	//background-color: red;
+	margin: auto 0;
+	overflow: :auto;
+}
+
+.drivelist ul {
+	//background-color: #3597FF;
+	height: 100%;
+	overflow: auto;
+	margin: 0 0;
+}
+
+.settings {
+
+	height: 60px;
+	width: 100%;
+	//background-color: bisque;
+	position: fixed;
+	bottom: 60px;
+	left: 30px;
+}
+
+.computerinfo {
+
+	height: 60px;
+
+
+	position: fixed;
+	bottom: 10px;
+	font-size: 1px;
+	border: 1px solid gainsboro;
+	left: 30px;
+	right: 30px;
+	padding: 10px 10px;
+
+}
+
+/*controls*/
+.listbutton {
+	//background-color: #8DE6FC;
+	text-decoration: none;
+	/*去掉前面的圆点*/
+	list-style: none;
+	display: block;
+	float: left;
+	border: 1px solid #FFFFFF;
+	margin: 5px;
+	padding: 15px;
+	font-size: 2px;
+	width: 200px;
+	height: 80px;
+	cursor: pointer;
+	display: flex;
+	display: -webkit-flex;
+	/* Safari */
+
+
+
+}
+
+.listbutton:hover {
+	border: 1px solid #86CAF1;
+}
+
+.listbutton .leftpart {
+	float: left;
+	font-size: 2px;
+	margin-top: 20px;
+}
+
+.listbutton .rightpart {
+
+	float: left;
+	margin: 0 auto;
+}
+
+.listbutton .iconpart {
+	float: left;
+	margin-right: 3px;
+}
+
+.listbutton .devicepart {
+	font-size: 10pt;
+	float: left;
+
+	overflow: hidden;
+}
+
+.listbutton .rightbottompart {
+	font-size: 10pt;
+	clear: both;
+	float: left;
+	overflow: hidden;
+}
+
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+}
+
+.tooltip .tooltip-inner {
+  background: black;
+  color: white;
+  border-radius: 16px;
+  padding: 5px 10px 4px;
+}
+
+.tooltip .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+  border-color: black;
+  z-index: 1;
+}
+
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .tooltip-arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="right"] {
+  margin-left: 5px;
+}
+
+.tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+
+.tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tooltip.popover .popover-inner {
+  background: #f9f9f9;
+  color: black;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(black, .1);
+}
+
+.tooltip.popover .popover-arrow {
+  border-color: #f9f9f9;
+}
+
+.tooltip[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .15s, visibility .15s;
+}
+
+.tooltip[aria-hidden='false'] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .15s;
+}

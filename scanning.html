@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="metro-no-touch-device">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="metro4:init" content="false">
+		<!-- Metro 4 -->
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="./css/metro-all.min.css">
+		<link type="text/css" rel="stylesheet" href="./css/mycontrolls.css">
+		<script src="./vue.js"></script>
+	</head>
+	<body style="border:1px solid;border-radius:5px">
+
+
+		<div class="window">
+
+			<div class="window-caption" @mousedown="" style="-webkit-app-region: drag;background-color:#22CB64;">
+				<span class="icon mif-ambulance"></span>
+				<span class="title">电脑清理-查找大文件</span>
+				<div class="buttons">
+					<span class="button btn-min sys-button"></span>
+					<span class="button btn-max sys-button"></span>
+					<span class="button btn-close sys-button" onclick="CppCall('closewindow');"></span>
+				</div>
+			</div>
+			<div class="description">
+				<div class="desc-icon" >
+					<img src="icon/external_drive_92px_1130306_easyicon.net.png" width="32" height="32" />
+				</div>
+				<div class="desc-text">
+					<b>快速找出最占磁盘空间的大文件</b>
+					<br>定期删除占用磁盘空间的无用大文件，释放更多磁盘空间！
+				</div>
+				<div class="desc-button" >
+					<button class="button success drop-shadow" onclick="OnBtnScan();">扫描大文件</button>
+				</div>
+			</div>
+
+			<div id="app" class="dBody">
+
+				<div class="mycontent ">
+					<ul data-view="tiles" id="listview-2">
+						<li class="listbutton" v-for="(item,i) in itemList">
+							<div class="leftpart">
+								<input type="checkbox" class="mycheck">
+							</div>
+							<div class="rightpart">
+								<div class="iconpart mif-5x">
+									<span class="mif-drive fg-grayblue mif-6x"></span>
+								</div>
+								<div class="devicepart">
+									{{item.name}}
+									<div data-role="progress" v-bind:data-cls-bar="item.used*100/item.drivecapacity>50?'bg-amber':'bg-green'"
+									 v-bind:data-value="item.used*100/item.drivecapacity" data-small="true"></div>
+
+								</div>
+								<div class="rightbottompart">
+									已用空间{{item.used}}GB,共{{item.drivecapacity}}GB
+								
+								</div>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+			<div id="dFoot" >
+				<div class="footcontent">
+					<div style="bottom: 5px;">您当前已使用：7.6TB，硬盘大小：10.4TB</div>
+					<div class="footprogress" data-role="progress" 
+					data-value="35" data-small="true"></div>
+				</div>
+				
+			</div>
+
+
+		</div> <!-- window -->
+
+
+
+
+		<!-- jQuery first, then Metro UI JS -->
+		<script src="./js/jquery-3.3.1.min.js"></script>
+		<script src="./js/metro.min.js"></script>
+		<script src='./js/index.js'></script>
+
+	</body>
+</html>
